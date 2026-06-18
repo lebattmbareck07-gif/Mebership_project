@@ -1,5 +1,3 @@
-# Mebership_project
-A small project that manage the the membership club. 
-This project based on oop especially in the intermediate level, it manange the membership how to add member or display them, search for a member or edit the information of a member even delete a member.
-## In this project you should install jason library by pip in the cmd or install it from internet .
-
+# A small project that manages a membership club. 
+This project is based on OOP, especially at an intermediate level. It manages members, including adding a member, displaying members, searching for a member, editing member information, and deleting a member.
+## In this project you slould take a sight about json module, because we save the membership information on it.
