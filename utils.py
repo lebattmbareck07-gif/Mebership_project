@@ -2,17 +2,21 @@ from models import Gym_membership_Management
 import json
 import os
 import time
+
+'''               This Function is made for making The screen clear                         '''
 def clear_screen():
     os.system("cls" if os.name=="nt" else "clear")
 #-------------------------------------------------------------------------------------------------------------------
+'''               This Function is made to store The Members information                     '''
 def save_member(lista):
      with open("Basket.json", "w") as file:
         json.dump(lista,file, indent=4)
 #----------------------------------------------------------------------------------------------------------------
-
+'''               This Function is made to show Members inside an option                      '''
 def show_member(member):
     Gym_membership_Management(member["first_name"], member["last_name"], member["ID"], member["status"]).display()
 #-----------------------------------------------------------------------------------------------------------------------
+'''                This Function is made to create Members                                     '''
 def create_user(lista):
     clear_screen()
     first_name=input("Enter first name: ")
@@ -32,6 +36,7 @@ def create_user(lista):
         status=input("Enter Membership status, Or click enter: ").capitalize() or "Inactive"
     return Gym_membership_Management(first_name, last_name, ID, status)
 #--------------------------------------------------------------------------------------------------------------------
+'''                     This Function is made to remove a Member from the store               '''
 def remove_member(lista):
     member_to_delete=None
     while True:
@@ -78,6 +83,7 @@ def remove_member(lista):
             break
         
 #----------------------------------------------------------------------------------------------------------------
+'''                               This Function is made to search for Members                    '''
 def search_member(lista):
     while True:
         clear_screen()
@@ -141,7 +147,8 @@ def search_member(lista):
             print("Invalid choice, Try again!!!!")
             time.sleep(2)
             continue
-#---------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------
+'''                 This Function is made to display Members on the home screen                     '''
 def displaying_member(lista):
     clear_screen()
     print("Displaying all members.....\n")
@@ -150,6 +157,7 @@ def displaying_member(lista):
        show_member(member)
     time.sleep(4)
 #--------------------------------------------------------------------------------------------------------------
+'''                 This Function is made to edit Members                          '''
 def edit_member(lista):
     while True:
         clear_screen()
