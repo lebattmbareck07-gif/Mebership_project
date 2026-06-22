@@ -1,3 +1,43 @@
-# A small project that manages a membership club. 
-This project is based on OOP, especially at an intermediate level. It manages members, including adding a member, displaying members, searching for a member, editing member information, and deleting a member.
-## In this project you should take a look at the JSON module, because we store the membership information in it.
+# Membership Management System
+
+A simple project built with Python using Object-Oriented Programming (OOP).  
+It manages members and stores data using JSON.
+
+---
+
+## Features
+
+- Add new member
+- Display all members
+- Search for a member
+- Edit member information
+- Delete member
+- Save data using JSON file
+
+---
+
+## Technologies Used
+
+- Python 3
+- Object-Oriented Programming (OOP)
+- JSON module
+
+---
+
+## Project Structure
+
+Membership_project/
+│
+├── main.py
+├── models.py
+├── utils.py
+├── Basket.json
+└── README.md
+
+
+---
+
+## How to Run
+
+```bash
+python main.py
