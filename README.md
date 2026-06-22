@@ -34,6 +34,12 @@ Membership_project/
 ├── Basket.json
 └── README.md
 
+## Exemple Usage
+
+-Add a member by entering name and ID
+-Search using member ID
+-Update or delete member easily
+
 
 ---
 
