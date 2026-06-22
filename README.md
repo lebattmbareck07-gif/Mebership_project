@@ -34,7 +34,7 @@ Membership_project/
 ├── Basket.json
 └── README.md
 
-## Exemple Usage
+## Example Usage
 
 - Add a member by entering name and ID
 - Search using member ID
